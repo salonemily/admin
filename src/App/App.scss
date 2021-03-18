@@ -1,0 +1,206 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./style/mixin";
+@import "./style/reset";
+//main
+.header-conteiner
+{
+  text-align: center;
+    
+  h2{
+    
+    display: inline-block;
+    text-shadow: 2px 1px rgb(202, 202, 202);
+    position:relative;
+    top:15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px
+  }
+  border-bottom: 1px solid rgb(221, 213, 213) ;
+  margin-top: 0.5%;
+  margin-bottom: 2.5%;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 5%;
+   
+   h2{
+    font-size: 24px;
+    
+  }
+
+}
+}
+//home-page
+.home {
+  
+  @include flexmix(center,row);
+  .home-segment {
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+//basic-forms
+.basic-form-segment {
+  @include flexmix(center,row);
+  .basic-form {
+    .ui.buttons {
+      @include flexmix(center,row);
+    }
+    .inline.field {
+      label {
+        font-size: medium;
+        padding: 10px;
+      }
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+    }
+    input {
+      border: 1px solid rgb(71, 70, 69);
+    }
+  }
+}
+table {
+  text-align: center;
+}
+//Client-layout
+.details-grid{
+  margin-top: 2% ;
+ 
+}
+
+//card style
+.row-conteiner{
+  @media screen and (max-width: 1200px) {
+    
+    position: relative;
+    .card-body-conteiner{
+      border: solid black 2px;
+      position: fixed;
+      width: 50%;
+      bottom:10%;
+      left:25%
+      
+    }
+    
+}
+@media screen and (max-width: 600px) {
+  .card-body-conteiner{
+    width: 60%;
+    left:20%
+
+    
+  }
+  
+}
+
+}
+.card-body-conteiner{
+ 
+  .card-body{
+    text-align: left;
+    .card-title,.card-subtitle{
+      text-align: center;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px #ffdb8e;
+
+    }
+    .card-subtitle{
+      border-bottom: solid 2px rgb(202, 202, 199);
+      padding: 1%;
+    }
+    .data-field{
+      font-size: 16px;
+      border-bottom: solid 1px rgb(223, 223, 220);
+    }
+    .title{
+      font-weight: bold;
+
+
+
+    }
+    
+  }
+  .button-body{
+    @include flexmix(space-around,row);
+    button,a{
+      padding: 15px 30px;
+    }
+  }
+  }
+
+
+//SaleOrder
+.create-order-segment
+{
+  .color-popup{
+    height: 40px;
+    
+  }
+  .ui.ordered.steps
+  {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .progress-error
+  {
+    color: red;
+  }
+  button.ui.yellow.button
+  {
+    color: black;
+  
+  }
+  
+}
+.pagination-table
+{
+  display: flex;
+  justify-content: center;
+}
+.pdf-button
+{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 109, 5);
+  border-radius: 5px;
+  padding: 10px;
+}
+.order-segment
+{
+  .ui.orange.segment
+  {
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex:1
+      
+    
+    
+  }
+  
+}
+//status
+.status-free{
+  color: green;
+}
+//closingSale
+.closing-sale-list{
+   padding: 1%;
+   margin: 1%;
+   text-align: center;
+   li{
+     font-size: 1.1rem;
+     padding: 2.3%;
+   }
+}
+//Sales
+.flex-button-order
+{
+  display: flex;
+  justify-content: space-between;
+}
